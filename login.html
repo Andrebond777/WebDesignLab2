@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Y'fn</title>
+    <meta name="description" content="Інтернет-магазин Brand_Y'fn пропонує чоловічий, жіночий та дитячий одяг. Brand_Y'fn для тих, хто шукає зручний комфортний, якісний та оригінальний одяг для себе чи для інших членів своєї сім'ї. Ми пропонуємо цікаві поєднання в одному стилі для всієї сім' ї!">
+    <meta name="author" content="andrebond777">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    
+</head><!--/head-->
+
+<body>
+
+    <header id="header">
+        <!--header-->
+        <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons">
+                            <ul class="nav">
+                                <li><a href="tel:+380976443016"><i class="fa fa-phone"></i> +38 097 644 30 16</a></li>
+                                <li><a href="tel:+380634370449"><i class="fa fa-phone"></i> +38 063 437 04 49</a></li>
+                                <li><a href="https://instagram.com/brand_yfn?igshid=vo3c7uzv2uze" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons pull-right">
+                            <ul class="nav">
+                                <li><a href="https://goo.gl/maps/TqMvW5ubCA2PJgZs7" target="_blank"><i class="fa fa-map-marker"></i> Ірпінь, вул. Українська, 48а</a></li>
+                                <li><a href="mailto: Brand.yfn.shop@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Brand.yfn.shop@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="header-middle">
+            <!--header-middle-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo pull-left">
+                            <a href="index.html"><img src="images/home/logo.png" alt="logo" height="60" /></a>
+                        </div>
+                        <div class="btn-group pull-right">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav">
+                                <li style="color:white;" class="mr-5">                                      
+                                    <button id="exit" class="btn btn-default add-to-cart rounded-pill"><i class="fa fa-ban"></i>&nbsp;Вихід</button>    
+                                </a>
+                                </li>
+                                <li id="log" style="color:white;" class="mr-5">                                      
+                                    <a href="login.html"><i class="fa fa-sign-in"></i>&nbsp;Вхід</a>     
+                                </a>
+                                </li>
+                                <li id="reg" style="color:white;" class="mr-5">
+                                    <a href="register.html"><i class="fa fa-registered"></i>&nbsp;Реєстрація</a>   
+                                    </a>
+                                </li>
+                                <li id="userInfo" style="color:white;" class="mr-5">                                      
+                                    <a href="userInfo.html"><i class="fa fa-table"></i>&nbsp;Профіль користувача</a>     
+                                </a>
+                                </li>
+                                <li style="color:white;" class="mr-5">                                      
+                                    <a href="about.html"><i class="fa fa-info"></i>&nbsp;Про додаток</a>     
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-middle-->
+
+        <div class="header-bottom">
+            <!--header-bottom-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 search_form">
+                        <form asp-area="Customer" asp-controller="Home" asp-action="Index">
+                            <p>
+                                <input type="text" placeholder="Пошук" name="SearchString" class="mb-0" />
+                                <button class="btn btn-outline-secondary border-start-0 border rounded-pill ms-n3" type="submit">
+                                    <i class=" fa fa-search"></i>
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-bottom-->
+    </header><!--/header-->
+
+    <form id="login">
+
+      
+        <div class="container">
+          <label for="email"><b>Email</b></label>
+          <input type="email" id="email" placeholder="Enter Email" name="email" required>
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" id="password" placeholder="Enter Password" name="password" required>
+      
+          <button type="submit">Login</button>
+        </div>
+      </form>
+
+    <footer id="footer">
+
+        <div class="">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+            <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons">
+                            <ul class="nav nav-pills">
+                                <li><a href="tel:+380976443016"><i class="fa fa-phone"></i> +38 097 644 30 16</a></li>
+                                <li><a href="tel:+380634370449"><i class="fa fa-phone"></i> +38 063 437 04 49</a></li>
+                                <li><a href="https://instagram.com/brand_yfn?igshid=vo3c7uzv2uze" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons pull-right">
+                            <ul class="nav nav-pills">
+                                <li><a href="https://goo.gl/maps/TqMvW5ubCA2PJgZs7" target="_blank"><i class="fa fa-map-marker"></i> Ірпінь, вул. Українська, 48а</a></li>
+                                <li><a href="mailto: Brand.yfn.shop@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Brand.yfn.shop@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                    <p class="">Copyright © 2021 Brand Y'fn. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer><!--/Footer-->
+
+    <script src="js/main.js"></script>
+    <script type="module" src="js/controller/login.js"></script>
+    <script src="https://kit.fontawesome.com/e19c476714.js"></script>
+</body>
+</html>

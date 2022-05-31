@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Y'fn</title>
+    <meta name="description" content="Інтернет-магазин Brand_Y'fn пропонує чоловічий, жіночий та дитячий одяг. Brand_Y'fn для тих, хто шукає зручний комфортний, якісний та оригінальний одяг для себе чи для інших членів своєї сім'ї. Ми пропонуємо цікаві поєднання в одному стилі для всієї сім' ї!">
+    <meta name="author" content="andrebond777">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head><!--/head-->
+
+<body>
+    <header id="header">
+        <!--header-->
+        <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons">
+                            <ul class="nav">
+                                <li><a href="tel:+380976443016"><i class="fa fa-phone"></i> +38 097 644 30 16</a></li>
+                                <li><a href="tel:+380634370449"><i class="fa fa-phone"></i> +38 063 437 04 49</a></li>
+                                <li><a href="https://instagram.com/brand_yfn?igshid=vo3c7uzv2uze" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons pull-right">
+                            <ul class="nav">
+                                <li><a href="https://goo.gl/maps/TqMvW5ubCA2PJgZs7" target="_blank"><i class="fa fa-map-marker"></i> Ірпінь, вул. Українська, 48а</a></li>
+                                <li><a href="mailto: Brand.yfn.shop@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Brand.yfn.shop@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="header-middle">
+            <!--header-middle-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo pull-left">
+                            <a href="index.html"><img src="images/home/logo.png" alt="logo" height="60" /></a>
+                        </div>
+                        <div class="btn-group pull-right">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav">
+                                <li style="color:white;" class="mr-5">                                      
+                                    <button id="exit" class="btn btn-default add-to-cart rounded-pill"><i class="fa fa-ban"></i>&nbsp;Вихід</button>    
+                                </a>
+                                </li>
+                                <li id="log" style="color:white;" class="mr-5">                                      
+                                    <a href="login.html"><i class="fa fa-sign-in"></i>&nbsp;Вхід</a>     
+                                </a>
+                                </li>
+                                <li id="reg" style="color:white;" class="mr-5">
+                                    <a href="register.html"><i class="fa fa-registered"></i>&nbsp;Реєстрація</a>   
+                                    </a>
+                                </li>
+                                <li id="userInfo" style="color:white;" class="mr-5">                                      
+                                    <a href="userInfo.html"><i class="fa fa-table"></i>&nbsp;Профіль користувача</a>     
+                                </a>
+                                </li>
+                                <li style="color:white;" class="mr-5">                                      
+                                    <a href="about.html"><i class="fa fa-info"></i>&nbsp;Про додаток</a>     
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-middle-->
+
+        <div class="header-bottom">
+            <!--header-bottom-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 search_form">
+                        <form asp-area="Customer" asp-controller="Home" asp-action="Index">
+                            <p>
+                                <input type="text" placeholder="Пошук" name="SearchString" class="mb-0" />
+                                <button class="btn btn-outline-secondary border-start-0 border rounded-pill ms-n3" type="submit">
+                                    <i class=" fa fa-search"></i>
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-bottom-->
+    </header><!--/header-->
+
+    <div class="container">
+        <main role="main" class="pb-3">           
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                                <div class="left-sidebar">
+                                    <h2>Категорії</h2>
+                                    <div class="panel-group category-products" id="accordian"><!--category-productsr-->
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h3 class=""><a><button class="btn btn-default add-to-cart rounded-pill" id="removeAllFilters">Скинути фільтри</button></a></h3>       
+                                                <h4 class=""><a><button class="btn btn-default add-to-cart rounded-pill" id="filterShoes">Взуття</button></a></h4>
+                                                <h4 class=""><a><button class="btn btn-default add-to-cart rounded-pill" id="filterPants">Штани</button></a></h4>
+                                                <h4 class=""><a><button class="btn btn-default add-to-cart rounded-pill" id="filterJackets">Куртки</button></a></h4>
+                                                <h4 class=""><a><button class="btn btn-default add-to-cart rounded-pill" id="filterT-shirts">Футболки</button></a></h4>
+                                            </div>
+                                        </div>
+                                    </div><!--/category-products-->
+                                
+                                </div>
+                            </div>
+
+                        <div class="col-sm-9 padding-right">
+                            <div class="features_items">
+                                <!--features_items-->
+                                <h2 class="title text-center">Товари</h2>
+                                <div class="col-sm-12">
+                                    <div class="product-image-wrapper">
+                                        <div class="shoes single-products col-sm-4">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/trainers.png" alt="Фото..." />
+                                                </a>
+                                                <h2 class="pt-1">1320₴</h2>
+                                                <p>Кросівки</p>
+                                            </div>
+                                        </div>
+                                        <div class="pants single-products col-sm-4">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/pants brown.png" alt="Фото..." />
+                                                </a>
+                                                <h2 class="pt-1">570₴</h2>
+                                                <p>Штани Коричневі</p>
+                                            </div>
+                                        </div>
+                                        <div class="t-shirts single-products col-sm-4">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/t-shirt yellow.png" alt="Фото..." />
+                                                </a>
+                                                <h2 class="pt-1">250₴</h2>
+                                                <p>Футболка Жовта</p>
+                                            </div>
+                                        </div>
+                                        <div class="jackets single-products col-sm-4">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/jacket red.png" alt="Фото..." />
+                                                </a>
+                                                <h2 class="pt-1">3180₴</h2>
+                                                <p>Куртка Червона</p>    
+                                            </div>
+                                        </div>
+                                        <div class="shoes single-products col-sm-4">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/shuttle shoes.png" alt="Фото..." />
+                                                </a>
+                                                <h2 class="pt-1">2050₴</h2>
+                                                <p>Туфлі-човники</p>
+                                            </div>
+                                        </div>
+                                        <div class="pants single-products col-sm-4">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/joggers.png" alt="Фото..." />
+                                                </a>
+                                                <h2 class="pt-1">620₴</h2>
+                                                <p>Штани Спортивні</p>
+                                            </div>
+                                        </div>
+                                        <div class="shoes single-products col-sm-4">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/low shoes.png" alt="Фото..." />
+                                                </a>
+                                                <h2 class="pt-1">1700₴</h2>
+                                                <p>Туфлі Чоловічі</p>
+                                            </div>
+                                        </div>
+                                        <div class="shoes single-products col-sm-4">
+                                            <div class="productinfo text-center">
+                                                <img src="images/home/military shoes.png" alt="Фото..." />
+                                                </a>
+                                                <h2 class="pt-1">2400₴</h2>
+                                                <p>Талани</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--features_items-->
+                        </div>
+                    </div>
+                </div>
+            </section>              
+        </main>
+    </div>
+
+    <footer id="footer">
+
+        <div class="">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+            <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons">
+                            <ul class="nav nav-pills">
+                                <li><a href="tel:+380976443016"><i class="fa fa-phone"></i> +38 097 644 30 16</a></li>
+                                <li><a href="tel:+380634370449"><i class="fa fa-phone"></i> +38 063 437 04 49</a></li>
+                                <li><a href="https://instagram.com/brand_yfn?igshid=vo3c7uzv2uze" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons pull-right">
+                            <ul class="nav nav-pills">
+                                <li><a href="https://goo.gl/maps/TqMvW5ubCA2PJgZs7" target="_blank"><i class="fa fa-map-marker"></i> Ірпінь, вул. Українська, 48а</a></li>
+                                <li><a href="mailto: Brand.yfn.shop@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Brand.yfn.shop@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                    <p class="">Copyright © 2021 Brand Y'fn. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer><!--/Footer-->
+
+    <script src="js/main.js"></script>
+    <script type="module" src="js/controller/index.js"></script>
+    <script src="https://kit.fontawesome.com/e19c476714.js"></script>
+
+</body>
+</html>
