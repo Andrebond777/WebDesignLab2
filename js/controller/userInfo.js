@@ -2,6 +2,11 @@
 
     if(window.localStorage.getItem('LoggedInEmail') != 'null')
     {
+        retrieveUser();
+    }
+
+    function retrieveUser(){
+
         console.log("retrieve user");
         var keyEmail = window.localStorage.getItem('LoggedInEmail');
         var user = JSON.parse(window.localStorage.getItem(keyEmail));
@@ -31,8 +36,6 @@
         cell.appendChild(paragraph);
     }
 
-
-
     function logOut (){
         window.localStorage.setItem('LoggedInEmail', null); 
         location.reload();
@@ -55,4 +58,6 @@
 
         logOut();
     }
+
+
 
